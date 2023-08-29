@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
  
@@ -12,7 +13,25 @@
     <input id="nueva-tarea" type="text" placeholder="ingresar tarea">
     <button onclick="agregar()">Agregar</button>
 
+    <input id="numero-tarea-buscada" type="number" placeholder="numero tarea buscada">
+    <button onclick="buscar()">buscar</button>
+
+    <input id="numero-tarea-actualizar" type="number" placeholder="numero tarea actualizar">
+    <input id="txt-tarea-actualizar" type="text" placeholder="texto tarea actualizar">
+    <button onclick="actualizar()">actualizar</button>
+
+    <input id="numero-tarea-eliminar" type="number" placeholder="numero tarea a eliminar">
+    <button onclick="eliminar()">eliminar</button>
+
+    <button onclick="eliminarTodo()">eliminar todo</button>
+
     <div id="lista-tareas">
+
+        
+        <div id="tarea-buscada">
+        
+
+        </div>
         <ol>
 
         </ol>
